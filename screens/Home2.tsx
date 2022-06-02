@@ -1,7 +1,7 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import * as React from 'react'
 import { View, Text } from 'react-native'
-import { HomeTabStackParamList } from '../types'
+import { HomeTabStackParamList } from '../types/stacks'
 import Ionicons from '@expo/vector-icons/Ionicons'
 
 type Props = NativeStackScreenProps<HomeTabStackParamList, 'Home2'>

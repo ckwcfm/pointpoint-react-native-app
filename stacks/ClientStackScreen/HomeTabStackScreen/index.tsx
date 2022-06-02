@@ -2,7 +2,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { DrawerScreenProps } from '@react-navigation/drawer'
 import HomeScreen from '../../../screens/Home'
 import DrawerToggleButton from '../../../screens/DrawerToggleButton'
-import { HomeTabStackParamList, TabStackPrarmList } from '../../../types'
+import { HomeTabStackParamList, TabStackPrarmList } from '../../../types/stacks'
 import HomeScreen2 from '../../../screens/Home2'
 const Stack = createNativeStackNavigator<HomeTabStackParamList>()
 

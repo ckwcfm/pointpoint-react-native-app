@@ -1,5 +1,5 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
-import { AuthStackParamList } from '../../types'
+import { AuthStackParamList } from '../../types/stacks'
 import { View, Text } from 'react-native'
 import { useTheme } from '@react-navigation/native'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'

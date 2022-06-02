@@ -1,3 +1,5 @@
+import { Company } from './user'
+
 export type DrawerStackParamList = {
   client: undefined
   admin: undefined
@@ -18,6 +20,14 @@ export type HomeTabStackParamList = {
   Home2: undefined
 }
 
-export type SettingsTabStackPraramList = {
+export type SettingsTabStackParamList = {
   Settings: undefined
+}
+
+export type AdminStackParamList = {
+  AdminCompaniesScreen: undefined
+  AdminCompanyCardsScreen: {
+    company: Company
+  }
+  AdminCreateCompanyCardScreen: undefined
 }

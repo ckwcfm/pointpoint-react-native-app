@@ -1,4 +1,8 @@
 export type User = {
-  user: string
+  id: string
+  username: string
   token: string
+  tokenExp: number
+  refreshToken: string
+  refreshTokenExp: number
 }

@@ -1,4 +1,4 @@
-import { DrawerStackParamList } from '../../types'
+import { DrawerStackParamList } from '../../types/stacks'
 import { DrawerScreenProps } from '@react-navigation/drawer'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import HomeTabStackScreen from './HomeTabStackScreen'
