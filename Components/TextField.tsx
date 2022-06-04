@@ -13,8 +13,18 @@ const TextField: React.FC<Props> = (props) => {
   const [focus, setFocus] = useState(false)
   const { colors } = useTheme() as Theme
   const { title, titleIcon } = props
+  console.log({ title })
   const flexDirection =
     StyleSheet.flatten(props.style || {}).flexDirection || 'column'
+
+  const marginButton = () => {
+    return title === undefined || flexDirection === 'row' ? 0 : 4
+  }
+
+  const marginRight = () => {
+    return title === undefined || flexDirection === 'row' ? 4 : 0
+  }
+
   return (
     <View style={[props.style]}>
       <View
@@ -24,8 +34,8 @@ const TextField: React.FC<Props> = (props) => {
             alignItems: 'center',
           },
           {
-            marginBottom: flexDirection === 'row' ? 0 : 4,
-            marginRight: flexDirection === 'row' ? 4 : 0,
+            marginBottom: marginButton(),
+            marginRight: marginRight(),
           },
         ]}
       >

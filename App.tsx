@@ -97,7 +97,6 @@ const Main: React.FC = () => {
 export default function App() {
   const scheme = useColorScheme()
   const theme = () => {
-    console.log(scheme)
     return scheme === 'dark' ? Dark : Light
   }
 

@@ -20,7 +20,15 @@ const IconText: React.FC<Props> = ({
 }) => {
   const { colors } = useTheme() as Theme
   return (
-    <View style={[{ flexDirection: 'row', alignItems: 'center' }, style]}>
+    <View
+      style={[
+        {
+          flexDirection: 'row',
+          alignItems: 'center',
+        },
+        style,
+      ]}
+    >
       <Icon
         name={icon}
         size={iconSize}
